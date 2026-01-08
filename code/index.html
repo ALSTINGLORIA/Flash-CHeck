@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Invoice System</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+</head>
+<body>
+    <h1>Welcome To The Modern Inovice System</h1>
+    <br><br>
+    <h1>Inovice Item Entry</h1>
+    <form action="/submit" method="POST" id="invoice-form">
+        <div id="item-container">
+            <div class="item-form">
+            <label for="item_name">Item Name:</label>
+            <input type="text" name="item_name" required>
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" value="1" required>
+            <label for="price">Price per Item:</label>
+            <input type="number" name="price" step="0.01" value="0" required>
+            <label for="tax">Tax %:</label>
+            <input type="number" name="tax" step="0.01" value="0" required>
+            </div>
+        </div>
+        <button type="button" onclick="addItem()">Add Item</button>
+        <br><br>
+        <button type="submit">Submit Invoice</button>
+    </form>
+    <script>
+        function addItem() {
+            const container = document.getElementById("item-container")
+            const newItem = document.createElement("div")
+            newItem.classList.add('item-form')
+            newItem.innerHTML = `
+            <label for="item_name">Item Name:</label>
+            <input type="text" name="item_name" required>
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" value="1" required>
+            <label for="price">Price per Item:</label>
+            <input type="number" name="price" step="0.01" value="0" required>
+            <label for="tax">Tax %:</label>
+            <input type="number" name="tax" step="0.01" value="0" required>
+            `
+            container.appendChild(newItem)
+        }
+    </script>
+</body>
+</html>
