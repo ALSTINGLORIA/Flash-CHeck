@@ -23,6 +23,6 @@ This is a simple Invoice Management System built with **Flask**, which allows us
 
 ## Demo Images
 
-![Invoice Screenshot](assets/images/Home_page.png)
+![Invoice Screenshot](assets/images/Home_Page.png)
 
 ![Invoice Screenshot](assets/images/Invoice_page.png)
