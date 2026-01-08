@@ -1,7 +1,5 @@
 # Flash-CHeck
-A Flask based Invoice Generator 
-
- Invoice Management System
+A Flask based Invoice Generator
 
 ## Project Overview
 
@@ -18,3 +16,7 @@ This is a simple Invoice Management System built with **Flask**, which allows us
 - **Flask**: Python web framework used for handling backend logic.
 - **HTML/CSS**: Used for the front-end user interface.
 - **JavaScript**: Used for dynamically adding items to the form.
+
+## Unique feature added part to this project
+
+ - Claculates the Tax as well along with the price of the product.
